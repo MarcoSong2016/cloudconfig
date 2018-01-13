@@ -1,0 +1,7 @@
+# 自定义路由映射
+zuul:
+  ignored-services: '*'       #注释掉所有自动生成的映射
+  prefix: /api                 #添加前缀
+  routes:
+    order-service: /order/**
+    material-service: /material/**
